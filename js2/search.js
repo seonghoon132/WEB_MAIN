@@ -16,3 +16,4 @@ function googleSearch() {
     window.open(googleSearchUrl, "_blank"); // 새 창에서 검색 실행
     return false; // 폼 제출 방지
 }
+
