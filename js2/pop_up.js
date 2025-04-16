@@ -32,3 +32,7 @@ function pop_up() {
     function out(obj) {
         obj.src="image/logo_steam.svg";
         }
+
+        // const over = (obj) => {
+        //     obj.src = "image/LOGO.png";
+        //     };
