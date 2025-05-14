@@ -41,6 +41,7 @@ function getCookie(name) {
     var cookie_name = cookie_array[index].split("=");
  
    if (cookie_name[0] == "popupYN") {
+    document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString() + "; path=/" + ";SameSite=None; Secure";
     return cookie_name[1];
      }
    }
