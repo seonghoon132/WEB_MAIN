@@ -64,14 +64,15 @@ function closePopup() {
         }
     }
 
-    function over(obj) {
+    const over = (obj) => {
         obj.src="image/steamlogo2.png";
-        }
+    };
 
-    function out(obj) {
+    const out = (obj) => {
         obj.src="image/logo_steam.svg";
-        }
+    };
 
+  
         // const over = (obj) => {
         //     obj.src = "image/LOGO.png";
         //     };

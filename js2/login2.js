@@ -2,6 +2,11 @@ import { session_set, session_get, session_check } from './session.js';
 import { encrypt_text, decrypt_text } from './crypto.js';
 import { generateJWT, checkAuth } from './token.js';
 
+document.addEventListener('DOMContentLoaded', () => {
+    checkAuth();
+    init_logined();
+});
+
 function init(){ // 로그인 폼에 쿠키에서 가져온 아이디 입력
     const emailInput = document.getElementById('typeEmailX');
     const idsave_check = document.getElementById('idSaveCheck');
@@ -14,9 +19,10 @@ function init(){ // 로그인 폼에 쿠키에서 가져온 아이디 입력
         session_check(); // 세션 유무 검사
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    init();
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     init();
+// });
+
 
 function init_logined(){
     if(sessionStorage){
